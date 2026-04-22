@@ -1,0 +1,12 @@
+import { NextRequest, NextResponse } from "next/server"
+import { getIronSession } from "iron-session"
+import { sessionOptions, SessionData } from "@/lib/session"
+
+export async function POST(req: NextRequest) {
+  const res = NextResponse.json({ success: true })
+  const session = await getIronSession<SessionData>(req, res, sessionOptions)
+  // FIX: session.destroy() harus diikuti session.save() agar cookie benar-benar dihapus
+  session.destroy()
+  await session.save()
+  return res
+}
