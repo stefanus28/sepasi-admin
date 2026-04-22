@@ -144,4 +144,4 @@ sepasi-admin/
 
 ## 🔗 Related Project
 
-- [**Sepasi Ecommerce**](https://github.com/username/sepasi-ecommerce) — Frontend storefront publik yang mengkonsumsi API dari admin ini
+- [**Sepasi Ecommerce**](https://github.com/stefanus28/sepasi-ecommerce) — Frontend storefront publik yang mengkonsumsi API dari admin ini
